@@ -17,6 +17,15 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <!-- css -->
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font -->
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -42,7 +51,9 @@
               <a class="nav-link" href="#">BAlI</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tips/tips.html">TIps Terhindar dari COVID-19</a>
+              <a class="nav-link" href="tips/tips.html"
+                >TIps Terhindar dari COVID-19</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>
@@ -72,37 +83,42 @@
         </div>
       </div>
     </div>
-<!-- heor -->
-<!-- data -->
-<div class="data">
-  <div class="container">
-    <div class="row text-center mb-5">
-      <h1 class="fw-bold data-name">Total Data Covid-19 di Indonesia</h1>
+    <!-- heor -->
+    <!-- data -->
+    <div class="data">
+      <div class="container">
+        <div class="bg-data">
+          <div class="row text-center mb-4">
+            <h1 class="fw-bold data-name">Total Data Covid-19 di Indonesia</h1>
+          </div>
+          <div class="row gap-3">
+            <div class="col p-4 rounded-4">
+              <div class="box text-center bg-white py-5 rounded-4" id="data-infected">
+                <h2 class="text-primary">Terkonfirmasi</h2>
+                <h1 id="infected" class="text-primary"></h1>
+              </div>
+            </div>
+            <div class="col p-4 rounded-4">
+              <div class="box text-center bg-white rounded-4 py-5 text-success" id="data-recovered">
+                <h2 class="text-success">Sembuh</h2>
+                <h1 id="recovered" class="text-success"></h1>
+              </div>
+            </div>
+            <div class="col p-4 rounded-4">
+              <div class="box text-center text-danger bg-danger py-5 rounded-4" id="data-fatal">
+                <h2 class="text-white">Meninggal</h2>
+                <h1 id="fatal" class="text-white"></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="row gap-3">
-      <div class="col bg-primary p-4 rounded-4">
-        <div class="box text-center" id="infected">
-          <h2>Terkonfirmasi</h2>
-        </div>
-      </div>
-      <div class="col bg-success p-4 rounded-4">
-        <div class="box text-center" id="recovered">
-          <h2>Sembuh</h2>
-        </div>
-      </div>
-      <div class="col bg-danger p-4 rounded-4">
-        <div class="box text-center" id="fatal">
-          <h2>Meninggal</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- data -->
+    <!-- data -->
 
-<footer class="text-center text-white">
-  <p>Tetap ingat 3M &copy; by krisnu artha</p>
-</footer>
+    <footer class="text-center text-white">
+      <p>Tetap ingat 3M &copy; by krisnu artha</p>
+    </footer>
 
     <!-- script -->
     <script

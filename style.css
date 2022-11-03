@@ -5,42 +5,63 @@
   --blue: #003049;
   --light-blue: #669bbc;
 }
-
-.hero{
-    height: 100vh;
+* {
+  font-family: "Montserrat", sans-serif;
+  transition: 0.3s;
 }
-.hero .header{
-    font-size: 50px;
-    font-weight: 800;
-    color: var(--red);
+.hero {
+  height: 100vh;
 }
-.hero .sub-header{
-    font-size: 16px;
-    color: var(--dark-red);
+.hero .header {
+  font-size: 50px;
+  font-weight: 800;
+  color: var(--red);
 }
-
-.data .box h2{
-    color: gold;
-    font-weight: 400;
-    font-size: 20px;
-}
-.data .box h1{
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-}
-.data{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-justify-content:center ;}
-
-.data-name{
-    color: var(--red);
+.hero .sub-header {
+  font-size: 16px;
+  color: var(--dark-red);
 }
 
-footer{
-    background-color: #669bbc;
-    padding: 5px 0px;
+.data .box h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.data .box h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+.data {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.data-name {
+  color: white;
+}
+
+footer {
+  background-color: #669bbc;
+  padding: 5px 0px;
+}
+.data {
+  background-image: url(background/fusion-medical-animation-EAgGqOiDDMg-unsplash.jpg);
+  background-size: cover;
+}
+.data .bg-data{
+    background-color: rgba(255, 255, 255, 0.486);
+    padding: 50px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+/* #data-infected{
+    box-shadow: 0px 0px 40px rgba(0, 0, 255, 0.356);
+} */
+
+.box:hover{
+    transform: scale(1.1);
 }
 
