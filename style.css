@@ -1,0 +1,46 @@
+:root {
+  --dark-red: #780000;
+  --red: #c1121f;
+  --white: #fdf0d5;
+  --blue: #003049;
+  --light-blue: #669bbc;
+}
+
+.hero{
+    height: 100vh;
+}
+.hero .header{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--red);
+}
+.hero .sub-header{
+    font-size: 16px;
+    color: var(--dark-red);
+}
+
+.data .box h2{
+    color: gold;
+    font-weight: 400;
+    font-size: 20px;
+}
+.data .box h1{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.data{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+justify-content:center ;}
+
+.data-name{
+    color: var(--red);
+}
+
+footer{
+    background-color: #669bbc;
+    padding: 5px 0px;
+}
+
