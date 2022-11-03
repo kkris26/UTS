@@ -13,3 +13,19 @@
     color: var(--red);
     font-weight: bolder     ;
 }
+#header{
+  font-size: 40px;
+  color: var(--red);
+  font-weight: 700;
+}
+.desc h1{
+  color: var(--red);
+}
+.desc p{
+  color: #a76a6e;
+}
+
+footer {
+  background-color: #669bbc;
+  padding: 5px 0px;
+}
