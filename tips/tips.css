@@ -1,0 +1,15 @@
+:root {
+  --dark-red: #780000;
+  --red: #c1121f;
+  --white: #fdf0d5;
+  --blue: #003049;
+  --light-blue: #669bbc;
+}
+
+.col img{
+    width: 30%;
+}
+.name-tips{
+    color: var(--red);
+    font-weight: bolder     ;
+}
