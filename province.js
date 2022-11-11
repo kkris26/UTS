@@ -16,28 +16,27 @@ $(document).ready(function () {
     },
   });
 
-  $.ajax({
-    type: "GET",
-    url: "../API/stats.json",
-    success: function (result) {
-      var dataProvince = result.regions;
-      for (var i = 0; i <= dataProvince.length; i++) {
-        $("#dataProvince").change(function () {
+  $("#dataProvince").change(function () {
+    $.ajax({
+      type: "GET",
+      url: "../API/stats.json",
+      success: function (result) {
+        var dataProvince = result.regions;
+        for (var i = 0; i <= dataProvince.length; i++) {
           var selected = $("#dataProvince").find("option:selected").text();
           if (selected == dataProvince[i].name) {
             var infected = dataProvince[i].numbers.infected;
             var recovered = dataProvince[i].numbers.recovered;
             var fatal = dataProvince[i].numbers.infected;
             // input to html
-            $("#infected").append("Terinfeksi" + infected + " Case");
-            $("#recovered").append("Sembuh" + recovered + " Case");
-            $("#fatal").append("Meninggal" + fatal + " Case");
-            alert("this is " + selected);
+            $("#infected").html("Terinfeksi " + infected + " Case");
+            $("#recovered").html("Sembuh " + recovered + " Case");
+            $("#fatal").html("Meninggal " + fatal + " Case");  
             //   alert("sukses");
           }
-        });
-        // console.log(dataProvince[i].numbers.infected);
-      }
-    },
+          // console.log(dataProvince[i].numbers.infected);
+        }
+      },
+    });
   });
 });
