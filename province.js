@@ -29,9 +29,9 @@ $(document).ready(function () {
             var recovered = dataProvince[i].numbers.recovered;
             var fatal = dataProvince[i].numbers.infected;
             // input to html
-            $("#infected").html("Terinfeksi " + infected + " Case");
-            $("#recovered").html("Sembuh " + recovered + " Case");
-            $("#fatal").html("Meninggal " + fatal + " Case");  
+            $("#infected").html("Terinfeksi " + infected + " case");
+            $("#recovered").html("Sembuh " + recovered + " case");
+            $("#fatal").html("Meninggal " + fatal + " case");  
             //   alert("sukses");
           }
           // console.log(dataProvince[i].numbers.infected);
